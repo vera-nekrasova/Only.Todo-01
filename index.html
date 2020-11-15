@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+	<title>To do</title>
+</head>
+
+<body>
+	<div class="container">
+		<header class="header">
+			<span class="header__data">Сегодня</span>
+			<div class="header__btn">Править</div>
+		</header>
+
+		<main class="main">
+			<p class="main__empty-list hide">Список задач пуст</p>
+			<div class="main__tasks">
+				<label class="task">
+					<input class="checkbox" type="checkbox">
+					<span class="task__circle task__circle_check"></span>
+					<span class="task__text">Пройти стажировку в Онли</span>
+				</label>
+				<label class="task">
+					<input class="checkbox" type="checkbox">
+					<span class="task__circle task__circle_check"></span>
+					<span class="task__text">Побриться</span>
+				</label>
+				<label class="task">
+					<input class="checkbox" type="checkbox">
+					<span class="task__circle task__circle_check"></span>
+					<span class="task__text">Купить молоко</span>
+				</label>
+				<label class="task">
+					<input class="checkbox" type="checkbox">
+					<span class="task__circle task__circle_check"></span>
+					<span class="task__text">Не забыть забрать сына из садика</span>
+				</label>
+				<label class="task">
+					<input class="checkbox" type="checkbox">
+					<span class="task__circle task__circle_check"></span>
+					<span class="task__text">Купить сыр</span>
+				</label>
+			</div>
+			<div class="main__btn-add">+</div>
+		</main>
+	</div>
+
+	<div class="popup popup__add-task hide-popup">
+		<div class="container">
+			<textarea class="popup__inp popup__inp_add-task" placeholder="Введите текст задачи"></textarea>
+			<div class="popup__btn-close btn">Закрыть</div>
+			<div class="popup__btn-add-save btn">Добавить</div>
+		</div>
+	</div>
+
+	<div class="popup popup__edit-task hide-popup">
+		<div class="container">
+			<input class="popup__inp popup__inp_edit-task" type="text">
+			<div class="popup__btn-close btn">Закрыть</div>
+			<div class="popup__btn-add-save btn">Сохранить</div>
+		</div>
+	</div>
+
+	<script src="js/script.js"></script>
+</body>
+</html>
