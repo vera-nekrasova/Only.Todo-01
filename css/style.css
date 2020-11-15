@@ -234,3 +234,14 @@ input:focus, textarea:focus {
 		transform: translateY(500%);
 	}
 }
+
+@media screen and (max-width: 385px) {
+	.btn {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.popup__btn-close {
+		margin-bottom: 10px;
+	}
+}
