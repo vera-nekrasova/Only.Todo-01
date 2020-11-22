@@ -1,0 +1,31 @@
+mixin task(arr)
+    each text in arr
+        label.main__task
+            input(
+                class = 'checkbox'
+                type = "checkbox"
+            )
+            span.task__circle.task__circle_check
+            span.task__text=text
+
+mixin popupAdd()
+    .popup.popup__add-task.hide-popup
+        .container
+            textarea(
+                class="popup__inp popup__inp_add-task"
+                placeholder="Введите текст задачи"
+            )
+            .popup__row
+                .popup__btn-close Закрыть
+                .popup__btn-add Добавить
+
+mixin popupEdit()
+    .popup.popup__edit-task.hide-popup
+        .container
+            input(
+                class="popup__inp popup__inp_edit-task"
+                type="text"
+            )
+            .popup__row
+                .popup__btn-close Закрыть
+                .popup__btn-save Сохранить

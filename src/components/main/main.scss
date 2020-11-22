@@ -1,0 +1,94 @@
+.main {
+	font-size: 18px;
+	font-weight: 500;
+    text-align: left;
+    
+/* ------add task button------ */
+
+    &__btn-add {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background: #FFFFFF;
+        box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
+        color: #23A3FF;
+        font-size: 53px;
+        text-align: center;
+        right: 40px;
+        bottom: 40px;
+        cursor: pointer;
+    }
+    
+    &__task {
+        display: flex;
+        margin-bottom: 30px;
+        align-items: center;
+        cursor: pointer;
+    }
+}
+
+
+/* -----check-list--------- */
+
+.checkbox {
+    display: none;
+    
+    &:checked~.task__text{
+        color: rgba(0, 0, 0, 0.6);
+    }
+
+    &:checked~.task__circle_check::after {
+        background-color: #23A3FF;
+    }
+}
+
+ .task__circle {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	margin-right: 14px;
+    display: block;
+    
+    &_check {
+        border: 2px solid #D9D9D9;
+        position: relative;
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            top: 3px;
+            left: 3px;
+            transition: all 0.1s linear 0s;
+        }
+    }
+
+    /* -----del-task------- */
+
+    &_del-task {
+        background: #E85C5C;
+        text-align: center;
+        transition: all 0.3s linear 0s;
+        position: relative;
+        
+        &::after {
+            content: '-';
+            color: #FFFFFF;
+            font-weight: bold;
+            position: absolute;
+            top: -1px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.hide {
+	display: none;
+}
+
+

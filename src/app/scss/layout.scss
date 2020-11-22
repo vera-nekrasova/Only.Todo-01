@@ -1,0 +1,33 @@
+html {
+    
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    color: #1C1C1C;
+	overflow: hidden;
+}
+
+h1, h2, h3, h4, h5, ul, li {
+    font-size: inherit;
+    font-weight: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+    padding: 0 40px;
+}
+
+input:focus, textarea:focus {
+	outline: none;
+}

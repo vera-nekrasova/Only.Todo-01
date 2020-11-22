@@ -1,0 +1,27 @@
+.header {
+	padding-top: 60px;
+	text-align: left;
+	display: flex;
+	align-items: center;
+	margin-bottom: 48px;
+
+    &__data {
+        font-size: 28px;
+        font-weight: 800;
+        line-height: 41px;
+    }
+
+    &__btn {
+        margin-left: auto;
+        width: 86px;
+        height: 24px;
+        background: #F2F2F2;
+        border-radius: 4px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: center;
+        line-height: 22px;
+        cursor: pointer;
+    }
+}
